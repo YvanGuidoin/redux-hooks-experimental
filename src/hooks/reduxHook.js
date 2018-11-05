@@ -63,10 +63,13 @@ function useReduxSubscriptionToNamespace(namespace) {
     }
   }
 
-  useEffect(() => {
-    const unsubscribe = store.subscribe(handleChange);
-    return unsubscribe;
-  });
+  useEffect(
+    () => {
+      const unsubscribe = store.subscribe(handleChange);
+      return unsubscribe;
+    },
+    [namespace]
+  );
 
   return [state, dispatch];
 }
