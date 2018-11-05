@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1"
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "source-map-explorer": "^1.6.0"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
